@@ -88,13 +88,13 @@ body {
   margin-right: 93px;
 }
 
-.logo-start {
+.logo__start {
   color: var(--accent-colot);
 }
-.logo-and-top {
+.logo__and-top {
   color: var(--title-text-color);
 }
-.logo-bot {
+.logo__bot {
   font-family: raleway, sans-serif;
   font-weight: 700;
   font-size: 26px;
@@ -104,7 +104,7 @@ body {
   display: flex;
 }
 
-.logo-and {
+.logo__and-bot {
   color: var(--white-color);
 }
 
@@ -112,11 +112,11 @@ body {
 .site-nav {
   display: flex;
 }
-.site-nav .item:not(:last-child) {
+.site-nav .site-nav__item:not(:last-child) {
   margin-right: 50px;
 }
 
-.site-nav-link {
+.site-nav__link {
   display: block;
   padding-top: 31px;
   padding-bottom: 31px;
@@ -130,20 +130,20 @@ body {
 
   transition: color var(--transition-duration) var(--transition-timing-function);
 }
-.site-nav-link:hover,
-.site-nav-link:focus {
+.site-nav__link:hover,
+.site-nav__link:focus {
   color: var(--accent-colot);
 }
-.current:active {
+.site-nav__link--current:active {
   color: var(--accent-colot);
 }
 
-.current {
+.site-nav__link--current {
   color: var(--accent-colot);
   position: relative;
 }
 
-.current::after {
+.site-nav__link--current::after {
   position: absolute;
   bottom: 0;
 
@@ -155,16 +155,16 @@ body {
   border-radius: 2px;
 }
 
-/* contacts */
+/*---------------- contacts -------------------*/
 .contacts {
   display: flex;
   margin-left: auto;
 }
-.contacts .item + .item {
+.contacts .contacts__item + .contacts__item {
   margin-left: 50px;
 }
 
-.contacts-link {
+.contacts__link {
   color: var(--primeri-text-color);
 
   font-weight: 500;
@@ -181,19 +181,19 @@ body {
     fill var(--transition-duration) var(--transition-timing-function);
 }
 
-.contacts-link:hover,
-.contacts-link:focus {
+.contacts__link:hover,
+.contacts__link:focus {
   color: var(--accent-colot);
   fill: var(--accent-colot);
 }
 
-.envelope {
+.contacts__envelope {
   width: 16px;
   height: 16px;
   margin-right: 10px;
 }
 
-.smartphone {
+.contacts__smartphone {
   width: 16px;
   height: 16px;
   margin-right: 10px;
@@ -223,7 +223,7 @@ body {
   background-size: cover;
 }
 
-.hero-title {
+.hero__title {
   color: var(--white-color);
 
   font-weight: 900;
@@ -234,7 +234,7 @@ body {
 
   margin-bottom: 30px;
 }
-.hero-button {
+.hero__button {
   background-color: var(--accent-colot);
   color: var(--white-color);
   width: 200px;
@@ -257,11 +257,11 @@ body {
   padding-top: 94px;
 }
 
-.work-section {
+.section--work {
   padding-top: 0;
 }
 
-.section-title {
+.section__title {
   color: var(--title-text-color);
 
   font-weight: 700;
@@ -272,17 +272,18 @@ body {
   margin-bottom: 50px;
 }
 
+/*-------------------- feature-------------- */
 .feature {
   display: flex;
 }
-.feature-item {
+.feature__item {
   width: 270px;
 }
-.feature-item:not(:last-child) {
+.feature__item:not(:last-child) {
   margin-right: 30px;
 }
 
-.feature-title {
+.feature__title {
   color: var(--title-text-color);
 
   font-weight: 700;
@@ -294,12 +295,12 @@ body {
   margin-top: 30px;
 }
 
-.feature-text {
+.feature__text {
   font-size: 14px;
   line-height: 1.71;
 }
 
-.feature-icon-box {
+.feature__box {
   display: flex;
   justify-content: center;
   background-color: var(--gray-background-color);
@@ -307,24 +308,25 @@ body {
   padding: 25px;
 }
 
-.feature-icon {
+.feature__icon {
   height: 70px;
   width: 70px;
 }
 
+/*------------ our-work--------------- */
 .our-work {
   display: flex;
 }
-.our-work-item {
+.our-work__item {
   position: relative;
 
   margin-bottom: 0;
 }
-.our-work-item:not(:last-child) {
+.our-work__item:not(:last-child) {
   margin-right: 30px;
 }
 
-.our-work-name {
+.our-work__name {
   position: absolute;
   width: 100%;
   height: 70px;
@@ -343,11 +345,17 @@ body {
   color: var(--white-color);
 }
 
-.team-list {
+/*---------------- team------------- */
+
+.section--team {
+  background-color: var(--gray-background-color);
+}
+
+.team {
   display: flex;
 }
 
-.team-item {
+.team__item {
   margin-right: 30px;
   background-color: var(--white-color);
   border-radius: 0px 0px 4px 4px;
@@ -355,11 +363,11 @@ body {
     0px 2px 1px rgba(0, 0, 0, 0.2);
 }
 
-.team-item:last-child {
+.team__item:last-child {
   margin-right: 0px;
 }
 
-.team-name {
+.team__name {
   color: var(--title-text-color);
 
   font-weight: 500;
@@ -369,15 +377,12 @@ body {
   margin-bottom: 10px;
 }
 
-.team-container {
+.team__container {
   padding-top: 30px;
   padding-bottom: 30px;
 }
-.team {
-  background-color: var(--gray-background-color);
-}
 
-.team-profession {
+.team__profession {
   font-size: 16px;
   line-height: 1.9;
   text-align: center;
