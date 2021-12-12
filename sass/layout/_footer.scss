@@ -1,0 +1,32 @@
+.footer {
+  background-color: $black-background-color;
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+.footer__container {
+  display: flex;
+  align-items: baseline;
+}
+
+.footer__box {
+  min-width: 231px;
+  margin: 0 70px 0 0;
+  padding-right: 0;
+}
+
+.footer__caption {
+  margin-bottom: 20px;
+
+  color: $white-color;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+}
+
+.footer__social-networks--theme {
+  background-color: #44454e;
+  fill: $white-color;
+}
