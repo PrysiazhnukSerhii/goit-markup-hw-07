@@ -1,7 +1,3 @@
-.section--team {
-  background-color: $gray-background-color;
-}
-
 .team {
   display: flex;
 }
@@ -18,7 +14,7 @@
   }
 }
 
-.team__name {
+.team__title {
   color: $title-text-color;
   font-weight: 500;
   font-size: 16px;
@@ -32,7 +28,7 @@
   padding-bottom: 30px;
 }
 
-.team__profession {
+.team__text {
   font-size: 16px;
   line-height: 1.9;
   text-align: center;
